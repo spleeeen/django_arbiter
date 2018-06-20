@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'poll.apps.PollConfig',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,11 @@ WSGI_APPLICATION = 'arbiter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': ,
-        'USER': ,
-        'PASSWORD': ,
-        'HOST':
+        'NAME': 'django',
+        'USER': 'postgres',
+        'PASSWORD': 'b!twis33',
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
 
@@ -108,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
